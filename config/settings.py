@@ -130,3 +130,9 @@ STATIC_URL = "/static/"
 # Custom user model
 
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+
+# Auth app config
+
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
