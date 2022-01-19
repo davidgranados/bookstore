@@ -1,5 +1,3 @@
-from re import template
-
 from django.views.generic import DetailView, ListView
 
 from books.models import Book
