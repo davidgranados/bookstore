@@ -9,8 +9,9 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Install dependencies
-COPY requirements-lock.txt /app/requirements.txt
-RUN pip install -r requirements.txt
+COPY requirements-dev.txt .
+COPY requirements.txt .
+RUN pip install -r requirements-dev.txt
 
 # Copy project
 
